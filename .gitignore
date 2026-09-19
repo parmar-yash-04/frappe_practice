@@ -1,11 +1,18 @@
 .DS_Store
 *.pyc
+*.pyo
+*.pyd
+*$py.class
 *.egg-info
+.eggs/
+*.egg
 *.swp
 tags
 node_modules
 __pycache__
 .env
+.env*
+*.env
 *.log
 .vscode/
 .idea/
@@ -14,3 +21,33 @@ build/
 .tox/
 .coverage
 htmlcov/
+
+# Critical - secrets / credentials (never commit)
+site_config.json
+common_site_config.json
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+auth.json
+secrets/
+private/files/
+public/files/
+
+# Critical - DB dumps / backups / local data
+*.sql
+*.sql.gz
+*.dump
+*.sqlite3
+*.db
+
+# Critical - bench artifacts (safety if repo root ever includes bench)
+sites/
+env/
+logs/
+config/pids/
+*.sqlite
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
