@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-09-18 17:03:36.780034",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "subtask_title",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "subtask_title",
+   "fieldtype": "Data",
+   "label": "Subtask Title"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nIn Progress\nDone"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-18 17:04:40.634697",
+ "modified_by": "Administrator",
+ "module": "My Practice",
+ "name": "Practice Subtask",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
